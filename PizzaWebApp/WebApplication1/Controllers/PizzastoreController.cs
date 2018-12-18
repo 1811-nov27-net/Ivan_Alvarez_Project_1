@@ -21,13 +21,13 @@ namespace PizzaWebApp.Controllers
         [Route("login/")] 
         public ActionResult Index()
         {
-            return View();
+            return View(Repo.Getstores());
         }
 
         // GET: Pizzastore/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(Repo.Getordersbystore(id));
         }
 
         // GET: Pizzastore/Create
@@ -56,7 +56,7 @@ namespace PizzaWebApp.Controllers
         // GET: Pizzastore/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(Repo.Getordersbystore(id));
         }
 
         // POST: Pizzastore/Edit/5
@@ -79,7 +79,7 @@ namespace PizzaWebApp.Controllers
         // GET: Pizzastore/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(Repo.Getinventbystore(id));
         }
 
         // POST: Pizzastore/Delete/5

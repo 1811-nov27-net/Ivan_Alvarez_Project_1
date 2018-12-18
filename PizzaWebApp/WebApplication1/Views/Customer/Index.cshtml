@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PizzaWebApp.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+   
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Userid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deflocationid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latname)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Deflocationid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latname)
+            </td>
+            <td>
+                @Html.ActionLink("Default Location", "Edit", new { id = item.Userid , local = item.Deflocationid}) |
+                @Html.ActionLink("History", "Details", new { id = item.Userid }) |
+                @Html.ActionLink("Order from Palace Central", "Create", new { id = item.Userid, storeid = 1, localid = item.Deflocationid }) |
+                @Html.ActionLink("Order from Palace North", "Create", new { id = item.Userid, storeid = 2, localid = item.Deflocationid })
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

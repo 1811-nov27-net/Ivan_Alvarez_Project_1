@@ -62,3 +62,10 @@ C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2
 C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\PizzaWebApp.csproj.CopyComplete
 C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\PizzaWebApp.dll
 C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\PizzaWebApp.pdb
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Details.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Pizzastore\Index.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Create.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Pizzastore\Edit.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Pizzastore\Delete.g.cshtml.cs
+C:\revature\alvarez-practice\PizzaWebApp\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Pizzastore\Details.g.cshtml.cs

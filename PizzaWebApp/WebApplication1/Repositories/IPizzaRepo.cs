@@ -10,13 +10,22 @@ namespace PizzaWebApp.Repositories
     {
         void Save();
         void Createorder(Orderdetails order);
+        Orderdetails Getorderbytime(DateTime time);
         void Createpizzaorder(Orderedpizzas pizzaorder);
         void Createdrinkorder(Ordereddrinks drinkorder);
         void Createsideorder(Orderedsides sideorder);
         void Createhistory(History history);
         void Createlocal(Location local);
-        void UpdateCustomdeflocal(Customer user);
+        void UpdateCustomdeflocalid(Customer user);
+        void Updatedeflocal(Location local);
         //void Updatelocal(Orderdetails order);
+        IEnumerable<Orderdetails> Getorderdetsbyid(int id);
+        IEnumerable<Orderdetails> GetUsersbystore(int id);
+        IEnumerable<Inventorypizzas> Getinventbystore(int id);
+        IEnumerable<Orderdetails> Getordersbystore(int id);
+       // IEnumerable<Customer> Getcustomerbystore(int id);
+        Location Getlocationbyid(int id);
+        Inventorypizzas Getinventpizzas(int store, string name);
         void Updateinventpizza(Inventorypizzas inventpizzas);
         void Updateinventdrink(Inventorydrinks inventdrink);
         void Updateinventsides(Inventorysides inventsides);

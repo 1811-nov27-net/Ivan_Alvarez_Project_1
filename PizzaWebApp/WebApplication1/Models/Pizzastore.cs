@@ -4,6 +4,7 @@ namespace PizzaWebApp.Models
 {
     public class Pizzastore
     {
+
         public int Storeid { get; set; }
         public string Name { get; set; }
         public int Locationid { get; set; }

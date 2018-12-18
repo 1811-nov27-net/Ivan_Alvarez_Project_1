@@ -1,0 +1,48 @@
+﻿@model PizzaWebApp.Models.Orderedpizzas
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create1">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Pizzaname" class="control-label"></label>
+                <input asp-for="Pizzaname" class="form-control" />
+                <span asp-validation-for="Pizzaname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pizzaqty" class="control-label"></label>
+                <input asp-for="Pizzaqty" class="form-control" />
+                <span asp-validation-for="Pizzaqty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pizzascost" class="control-label"></label>
+                <input asp-for="Pizzascost" class="form-control" />
+                <span asp-validation-for="Pizzascost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*@Html.Hidden(((int)ViewBag["Storeid"]).ToString())
+        @Html.Hidden(((int)ViewBag["id"]).ToString())
+        @Html.Hidden(((int)ViewBag["localid"]).ToString())*@
+                @*<input type="hidden" value="@ViewData["storeid"]" id="storeid" />
+                <input type="hidden" value="@ViewData["id"]" id="id" />
+                <input type="hidden" value="@ViewData["localid"]" id="localid" />*@
+
+
+                <input type="submit" value="Create1" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
